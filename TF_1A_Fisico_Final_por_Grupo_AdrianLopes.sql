@@ -14,6 +14,7 @@
 --               => Especificacao da Engine para cada Tabela
 --    27/04/2022 => Alteracao do nome da base de dados
 --    28/04/2022 => Alteracao do nome da base de dados
+--    30/04/2022 => Alteracao DATE para DATETIME (CONTRATO, SESSAO)
 --
 --  PROJETO => 01 Base de Dados
 --         	=> 33 Tabelas
@@ -288,7 +289,7 @@ CREATE TABLE CONTRATO (
     idContrato INT NOT NULL auto_increment,
     idParente int NOT NULL,
     idPacote int NOT NULL,
-    dtAssinatura DATE NOT NULL,
+    dtAssinatura DATETIME NOT NULL,
     validadeMeses varchar(15),
     CONSTRAINT CONTRATO_PK primary key (idContrato),
     
@@ -469,7 +470,7 @@ CREATE TABLE condicoesPsicologicas (
 
 CREATE TABLE SESSAO (
     idSessao INT NOT NULL auto_increment,
-    dataSessao DATE NOT NULL,
+    dataHoraSessao DATETIME NOT NULL,
 	observacoes varchar(300),
     idCrianca int NOT NULL,
     cpfMedica DECIMAL(11) NOT NULL,

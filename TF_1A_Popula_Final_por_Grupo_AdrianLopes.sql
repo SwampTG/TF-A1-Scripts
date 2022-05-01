@@ -10,6 +10,7 @@
 --  Ultimas Alteracoes:
 --    27/04/2022 => Alteracao do nome da base de dados
 --    28/04/2022 => Alteracao do nome da base de dados
+--    29/04/2022 => Alteracao DATE para DATETIME (CONTRATO, SESSAO)
 --
 --  PROJETO => 01 Base de Dados
 --         	=> 33 Tabelas
@@ -192,11 +193,11 @@ INSERT INTO possui VALUES
 (5, 15, 1);
 
 INSERT INTO CONTRATO VALUES
-(null, 1, 1, '2022-04-18', 2),
-(null, 6, 2,'2022-04-10', 5),
-(null, 8, 3, '2022-04-13', 6),
-(null, 11, 4, '2022-04-04', 8),
-(null, 15, 5, '2022-04-02', 12);
+(null, 1, 1, '2022-04-18 14:35:00', 2),
+(null, 6, 2,'2022-04-10 10:17:00', 5),
+(null, 8, 3, '2022-04-13 16:22:00', 6),
+(null, 11, 4, '2022-04-04 09:43:00', 8),
+(null, 15, 5, '2022-04-02 09:31:00', 12);
 
 INSERT INTO DESENVOLVIMENTOPSICOMOTOR VALUES
 (1, 1, 0, 0, 3, 2, 2, 1, 6),
@@ -276,11 +277,11 @@ INSERT INTO condicoesPsicologicas VALUES
 (14, 5, 'Depressão');
 
 INSERT INTO SESSAO VALUES
-(null, '2022-04-18', 'Sessão ocorreu sem nenhum imprevistos nem complicações', 1, 05894033829),
-(null, '2022-03-10', 'Sessão acabada mais cedo, criança não responsiva', 2, 05739374902),
-(null, '2022-01-03', 'Aplicados testes 4 e 5, resultados anotados', 3, 05894033829),
-(null, '2022-01-20', 'Sessão ocorreu sem nenhum imprevistos nem complicações', 4, 15738295493),
-(null, '2022-04-01', 'Aplicados testes 1 a 3, resultados anotados', 5, 18495839503);
+(null, '2022-04-18 15:20:00', 'Sessão ocorreu sem nenhum imprevistos nem complicações', 1, 05894033829),
+(null, '2022-03-10 16:00:00', 'Sessão acabada mais cedo, criança não responsiva', 2, 05739374902),
+(null, '2022-01-03 08:35:00', 'Aplicados testes 4 e 5, resultados anotados', 3, 05894033829),
+(null, '2022-01-20 09:40:00', 'Sessão ocorreu sem nenhum imprevistos nem complicações', 4, 15738295493),
+(null, '2022-04-01 14:14:00', 'Aplicados testes 1 a 3, resultados anotados', 5, 18495839503);
 
 INSERT INTO acontece VALUES
 (1, 5, 'Leitura rápida'),
